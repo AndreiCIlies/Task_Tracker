@@ -47,7 +47,7 @@ Launch MongoDB Compass for managing your MongoDB database.
 **5. Get Connection URI**  
 Right-click on "localhost" in the left panel again and select Show connection URI.
 
-**6. Add MongoDB Configuration in appsettings.Development.json**
+**6. Add MongoDB Configuration in appsettings.Development.json**  
 In Visual Studio navigate to appsettings.Development.json, and add the connection URI to ConnectionString.
 
 ### Frontend Setup
@@ -58,7 +58,7 @@ cd task-tracker
 npm install
 
 ### Usage
-**1. Run the API**
+**1. Run the API**  
 Click the green Start button (or press F5) to run the API.
 
 **2. Run the Angular Frontend**  
