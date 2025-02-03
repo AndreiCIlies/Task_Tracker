@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>Edit Task {{data.name}} </h2>
+<mat-dialog-content id="editTaskContent">
+    <mat-form-field>
+        <mat-label>Task Name</mat-label>
+        <input matInput [(ngModel)]="data.name" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Task Description</mat-label>
+        <input matInput [(ngModel)]="data.description" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Task Assigned To</mat-label>
+        <input matInput [(ngModel)]="data.assignedTo">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Task Due Time</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="Select Task Due Date"
+        id="taskDueDate"
+        name="taskDueDate"
+        [(ngModel)]="taskDueDate"
+        class="form-control"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Task Status</mat-label>
+        <mat-select [(ngModel)]="data.status">
+            <mat-option value="To Do">To Do</mat-option>
+            <mat-option value="In Progress">In Progress</mat-option>
+            <mat-option value="Done">Done</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+</mat-dialog-content>
+<mat-dialog-actions id="editTaskActions">
+    <button mat-button class="btn btn-primary" (click)="cancel()">Cancel</button>
+    <button mat-button class="btn btn-primary" (click)="save()">Save</button>
+</mat-dialog-actions>

@@ -1,0 +1,17 @@
+<app-filter (statusSelected)="handleStatusSelected($event)"> </app-filter>
+
+<div *ngFor="let task of filteredTasks" class="task-item card-with-border" [ngClass]="getCardClass(task.status)">
+    <div class="task-name text-style" style="font-size: 20px">{{ task.name }}</div>
+    <div class="task-description text-style">{{ task.description }}</div>
+    <div class="task-assignedTo text-style">{{ task.assignedTo }}</div>
+    <div class="task-dueDate text-style">{{ task.dueDate | date:'mediumDate'}}</div>
+    <div class="task-status text-style">{{ task.status }}</div>
+    <div class="task-actions text-style">
+      <button icon-button (click)="deleteTask(task)">
+        <mat-icon>delete</mat-icon>
+      </button>
+        <button icon-button (click)="editTask(task)">
+          <mat-icon>edit</mat-icon>
+        </button>
+    </div>
+</div>

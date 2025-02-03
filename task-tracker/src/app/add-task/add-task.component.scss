@@ -1,0 +1,39 @@
+.description-wrapper {
+    position: relative;
+  }
+  
+  .description-wrapper label {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    background-color: #fff;
+    padding: 0 5px;
+    color: #495057;
+    font-size: 0.9em;
+  }
+  
+  .description-wrapper textarea {
+    width: 100%;
+  }
+  
+  .text-style {
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-align: start;
+  }
+
+  .button-style {
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    text-align: start;
+  }
+
+  .section-style {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .input-style {
+    height: 30px;
+  }

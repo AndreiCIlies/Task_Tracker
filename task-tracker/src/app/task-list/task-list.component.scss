@@ -1,0 +1,30 @@
+.task-item {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-with-border {
+    border: 1.5px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .todo {
+    background-color: #FAA0A0; /* Color for ToDo tasks */
+  }
+  
+  .inprogress {
+    background-color: #fdfd96; /* Color for InProgress tasks */
+  }
+  
+  .done {
+    background-color: #77dd77 /* Color for Done tasks */
+  }
+
+.text-style {
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  }

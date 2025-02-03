@@ -1,0 +1,31 @@
+<div class="task-columns">
+  <div class="task-column">
+    <h2 class="text-style">To Do</h2>
+    <div *ngFor="let task of tasks">
+      <div *ngIf="task.status.toString() === status.ToDo">
+        <app-task-card [task]="task" (deleteEvent)="deleteTask($event)" (editEvent)="editTask($event)">
+        </app-task-card>
+      </div>
+    </div>
+  </div>
+  
+  <div class="task-column">
+    <h2 class="text-style">In Progress</h2>
+    <div *ngFor="let task of tasks">
+      <div *ngIf="task.status.toString() === status.InProgress">
+        <app-task-card [task]="task" (deleteEvent)="deleteTask($event)" (editEvent)="editTask($event)">
+        </app-task-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="task-column">
+    <h2 class="text-style">Done</h2>
+    <div *ngFor="let task of tasks">
+      <div *ngIf="task.status.toString() === status.Done">
+        <app-task-card [task]="task" (deleteEvent)="deleteTask($event)" (editEvent)="editTask($event)">
+        </app-task-card>
+      </div>
+    </div>
+  </div>
+</div>

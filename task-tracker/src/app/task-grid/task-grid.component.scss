@@ -1,0 +1,31 @@
+.task-columns {
+    display: flex;
+  }
+  
+  .task-column {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .todo {
+    background-color: red;
+  }
+  
+  .in-progress {
+    background-color: yellow;
+  }
+  
+  .done {
+    background-color: green;
+  }
+  
+  .text-style {
+    color: blue;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    background-color: #D2D2D2;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px; 
+  }
